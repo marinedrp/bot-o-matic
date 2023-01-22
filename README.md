@@ -17,7 +17,7 @@ Bot-O-Matic is a Discord Bot powered by AI to generate text, code examples and i
 This bot uses [Discord.js](https://discord.js.org/#/) and [OpenAI's API](https://openai.com/api/). It employs **DALL-E** to create images based on a prompt and the **text-davinci-003 model** to generate text and code responses.
 
 ## Notes
-This application was designed to run on private servers and is still in development. More commands will be added to it in the near future.
+This application was designed to run on a private server and is still in development. More commands will be added to it in the near future.
 
 ## Commands
 
@@ -27,8 +27,8 @@ This application was designed to run on private servers and is still in developm
 /create
 ```
 
-Generate 4 images based on the prompt given by the user.
-Images have a size of 1024x1024 pixels and can be downloaded as all files based on their url.
+Generate **4 images** based on the prompt given by the user.
+Images have a size of **1024x1024 pixels** and can be downloaded as **.png** images.
 
 ![screenshot1](./screenshots/screenshot1.png)
 
@@ -40,7 +40,7 @@ Images have a size of 1024x1024 pixels and can be downloaded as all files based 
 
 Generate a text response based on the user input.
 
-A code block will be displayed and highlighted according to the programming or style language specified by the user.
+A **block of code** will be displayed and **highlighted** according to the programming or style language specified by the user.
 Current languages supported: Javascript, Python, C#, C++, CSS.
 
 ![screenshot2](./screenshots/screenshot2.png)
@@ -50,9 +50,9 @@ Current languages supported: Javascript, Python, C#, C++, CSS.
 1. Create a **config.json file** and fill the following environment variables as detailed below:
 
 ```
-    "token": "YOUR_SECRET_TOKEN",
-    "clientId": "YOUR_CLIENT_ID",
-    "OPENAI_API_KEY":"YOUR_OPENAI_API_KEY"
+"token": "YOUR_SECRET_TOKEN",
+"clientId": "YOUR_CLIENT_ID",
+"OPENAI_API_KEY":"YOUR_OPENAI_API_KEY"
 ```
 
 2. Go to [OpenAI's website](https://beta.openai.com/account/api-keys), create a new API key, and add your **OPENAI_API_KEY**.
@@ -73,14 +73,14 @@ Current languages supported: Javascript, Python, C#, C++, CSS.
 7. Install dependencies, deploy the commands and run the bot:
 
 ```
-    npm install
-    node deploy-commands.js
-    node index.js
+npm install
+node deploy-commands.js
+node index.js
 ```
 
 
 ## Next Steps
 * Add a button to make variations for a selected image.
 * Store the images selected by the user.
-* Remove and replace the other basic commands (/ping, /user, /server, /cat, /echo).
+* Remove basic commands (/ping, /user, /server) and replace the other ones (/cat, /echo).
 * Implement the /help command to see all the commands.
