@@ -1,6 +1,6 @@
+const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const wait = require("node:timers/promises").setTimeout;
 const { Configuration, OpenAIApi } = require("openai");
-const { SlashCommandBuilder, EmbedBuilder } = require("discord.js");
 const { OPENAI_API_KEY } = require("../config.json");
 
 const configuration = new Configuration({
@@ -12,7 +12,7 @@ const openai = new OpenAIApi(configuration);
 module.exports = {
   data: new SlashCommandBuilder()
     .setName("create")
-    .setDescription("There are endless possibilities...")
+    .setDescription("Let the bot work its magic...")
     .addStringOption((option) =>
       option
         .setName("input")
@@ -40,7 +40,7 @@ module.exports = {
     // The client aggregates embeds that are part of the same message, as long as the URL property is the exact same.
     const embeds = [
       new EmbedBuilder()
-        .setColor("#66ffff")
+        .setColor("#1e1e2f")
         .setDescription(prompt)
         .setURL("https://discord.js.org/#/")
         .setImage(imageUrl1)
