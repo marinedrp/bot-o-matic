@@ -19,8 +19,7 @@ module.exports = {
 	async execute(interaction) {
 		await interaction.reply('Pong!');
         const message = await interaction.fetchReply();
-        console.log("This is a message: ", message);
-        // await wait(2000);
-        // await interaction.followUp('Pong again!');
+        await wait(2000);
+        await interaction.followUp('Pong again!');
 	},
 };
