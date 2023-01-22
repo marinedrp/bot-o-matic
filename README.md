@@ -50,9 +50,9 @@ Current languages supported: Javascript, Python, C#, C++, CSS.
 1. Create a **config.json file** and fill the following environment variables as detailed below:
 
 ```
-	"token": "YOUR_SECRET_TOKEN",
+    "token": "YOUR_SECRET_TOKEN",
     "clientId": "YOUR_CLIENT_ID",
-	"OPENAI_API_KEY":"YOUR_OPENAI_API_KEY"
+    "OPENAI_API_KEY":"YOUR_OPENAI_API_KEY"
 ```
 
 2. Go to [OpenAI's website](https://beta.openai.com/account/api-keys), create a new API key, and add your **OPENAI_API_KEY**.
@@ -73,7 +73,7 @@ Current languages supported: Javascript, Python, C#, C++, CSS.
 7. Install dependencies, deploy the commands and run the bot:
 
 ```
-	npm install
+    npm install
     node deploy-commands.js
     node index.js
 ```
@@ -81,6 +81,6 @@ Current languages supported: Javascript, Python, C#, C++, CSS.
 
 ## Next Steps
 * Add a button to make variations for a selected image.
-* Store the selected images by the user.
-* Remove and replace the other basic existing commands.
+* Store the images selected by the user.
+* Remove and replace the other basic commands (/ping, /user, /server, /cat, /echo).
 * Implement the /help command to see all the commands.
